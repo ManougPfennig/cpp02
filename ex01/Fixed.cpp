@@ -48,36 +48,6 @@ Fixed&	Fixed::operator=(const Fixed& Other){
 	return (*this);
 }
 
-bool	Fixed::operator==(const Fixed& Other){
-
-		return (_rawValue == Other._rawValue);
-}
-
-bool	Fixed::operator>(const Fixed& Other){
-
-		return (_rawValue > Other._rawValue);
-}
-
-bool	Fixed::operator<(const Fixed& Other){
-
-		return (_rawValue < Other._rawValue);
-}
-
-bool	Fixed::operator<=(const Fixed& Other){
-
-		return (_rawValue <= Other._rawValue);
-}
-
-bool	Fixed::operator>=(const Fixed& Other){
-
-		return (_rawValue >= Other._rawValue);
-}
-
-bool	Fixed::operator!=(const Fixed& Other){
-
-		return (_rawValue != Other._rawValue);
-}
-
 std::ostream& operator<<(std::ostream& os, const Fixed& Other){
 
 	os << (Other.toFloat());

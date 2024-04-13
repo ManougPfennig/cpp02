@@ -15,19 +15,7 @@ public :
 		Fixed( const int& toCopy );
 		Fixed( const float& toCopy );
 		~Fixed( void );
-		Fixed&	operator=( const Fixed& Other );
-
-		// operateur de comparaison
-		bool	operator==( const Fixed& Other );
-		bool	operator>( const Fixed& Other );
-		bool	operator<( const Fixed& Other );
-		bool	operator<=( const Fixed& Other );
-		bool	operator>=( const Fixed& Other );
-		bool	operator!=( const Fixed& Other );
-
-		//operateur arithmetique
-		int		
-
+		Fixed& operator=( const Fixed& Other );
 		void	setRawBits( int const raw );
 		int		getRawBits( void ) const;
 
